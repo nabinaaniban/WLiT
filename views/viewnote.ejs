@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+
+             <style>
+       body {
+               background-color: rgb(120,190,180)
+           }
+         </style>
+
+    <head>
+         <title>View note</title>
+         <link rel='stylesheet' href='/stylesheets/style.css' />
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    </head>
+    <body>
+           <h1>View notes</h1>
+           <% notes.forEach(function(note, i) { %>
+              <div class="note">
+               <a href=''><i class="far fa-edit"></i></a>
+               <a href='/deletenote/<%= note._id%>'><i class="far fa-trash-alt"></i></a>
+               <p><strong><%= note.title %></strong> <%= note.subject %></p>
+              </div>
+          <% }) %>
+
+
+   </body>
+</html>

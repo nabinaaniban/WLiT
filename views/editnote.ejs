@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+
+
+    <body>
+
+       <form method= "POST" action= "/editnote">
+          <p>EDIT YOUR NOTE</P>
+              <input type= "hidden" name= "_id" value= "<%= note._id%>">
+              <textarea type= "text" name= "title"><%=note.subject%></textarea><br/>
+              <textarea rows= "10" column= "50" name= "note"><%=note.subject%></textarea><br/>
+              <button type= "submit">UPDATE</button>
+      </form>
+
+
+  </body>
+
+
+  </html>

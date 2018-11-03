@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+       <title><%= title %></title>
+  </head>
+
+         <style>
+           body {
+        background-color: lightblue;
+         }
+        </style>
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <body>
+    <div class="w3-container">
+
+
+  	<form method="post" action="/addnote"></form>
+          <h1><%= title %></h1>
+      <!--    <p style="font-size:40px;"> <%= title %></p> -->
+          <p style="font-size:25px;">" START WRITING YOUR THINGS"</p>
+    </form>
+
+
+
+      <form action="/addnote" method = "get">
+          <button type="submit" class="w3-btn w3-black" class="btn btn-warning btn-lg" >GET STARTED</button>
+     </form>
+   </div>
+  </body>
+
+
+</html>
